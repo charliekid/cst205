@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    {% block content%}
+    <h1>CST 205 Random Photo Gallery</h1>
+    <!--        first image-->
+    <a href="{{url_for('image_page', id=id1)}}">{{title1}}</a><br>
+    <img src="/static/images/{{id1}}.jpg"
+         width="250"
+         class="img-fluid rounded"
+    > <br>
+    <!--        second image-->
+    <a href="{{url_for('image_page', id=id2)}}">{{title2}}</a><br>
+    <img src="/static/images/{{id2}}.jpg"
+         width="250"
+         class="img-fluid rounded"
+    > <br>
+    <!--        third image-->
+    <a href="{{url_for('image_page', id=id3)}}">{{title3}}</a><br>
+    <img src="/static/images/{{id3}}.jpg"
+         width="250"
+         class="img-fluid rounded"
+    > <br>
+    {% endblock %}
+</body>
+</html>

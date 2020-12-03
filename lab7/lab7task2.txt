@@ -1,0 +1,1 @@
+Task 2 - QCheckBox - It allows us to have a checkbox gui.

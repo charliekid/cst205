@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Page</title>
+</head>
+<body>
+    {% block content%}
+    <h1>{{title}} by {{author}}</h1>
+
+    <img src="/static/images/{{id}}.jpg"
+         class="img-fluid rounded"
+    > <br>
+    {{mode}} image in {{format}} with width {{w}} and height {{h}}. <br>
+
+    <a href="/">Back to Images</a>
+    {% endblock %}
+</body>
+</html>
